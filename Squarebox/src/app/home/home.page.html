@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col>
+      <ion-label name="lblFirstName">First Name: {{userObj.firstName}}</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-label name="lblLastName">Last Name: {{userObj.lastName}}</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-label name="lblEmail">Email: {{userObj.email}}</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="logout()">Logout</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
